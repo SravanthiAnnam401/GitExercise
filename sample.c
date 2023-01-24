@@ -4,6 +4,7 @@ void add(int, int);
 void sub(int, int);
 void mul(int, int);
 void div(int,int);
+void mod(int,int);
 int main()
 
 {
@@ -15,6 +16,7 @@ add(a,b);
 sub(a,b);
 mul(a,b);
 div(a,b);
+mod(a,b);
 return 0;
 
 }
@@ -43,4 +45,10 @@ void div(int x, int y)
 int sum;
 sum=x/y;
 printf("Div is:%d\n",sum);
+}
+void mod(int x, int y)
+{
+int sum;
+sum=x%y;
+printf("Mod is:%d\n",sum);
 }
